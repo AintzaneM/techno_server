@@ -18,9 +18,9 @@ app.use(express.json());
 app.use(helmet());
 app.use(morgan("common"))
 
-
-app.use("/api/users", (userRoute))
 app.use("/api/auth", (authRoute))
+app.use("/api/users", (userRoute))
+
 
 app.listen(5000, () => {
     console.log("Backend is ready to goooo!")
